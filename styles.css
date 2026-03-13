@@ -1,0 +1,90 @@
+:root {
+    /* Color café/dorado para combinar con las flores secas */
+    --color-oro: #a67c52; 
+    --color-texto: #5e4b3c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0ebe3; /* Color de fondo suave para la web */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.invitacion-card {
+    width: 95%;
+    max-width: 500px;
+    height: 700px; /* Proporción similar a la imagen */
+    background-image: url('fondo.jpg'); /* AQUÍ VA TU IMAGEN */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.contenido {
+    /* Fondo semi-transparente muy sutil para asegurar legibilidad */
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    color: var(--color-texto);
+}
+
+.nombres {
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--color-oro);
+}
+
+.titulo-principal {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    margin: 5px 0;
+    font-weight: 400;
+    color: var(--color-texto);
+}
+
+.frase-bienvenida {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 30px 0;
+    line-height: 1.4;
+}
+
+.datos-evento {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.datos-evento strong {
+    color: var(--color-oro);
+    font-weight: 500;
+}
+
+.rsvp {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(166, 124, 82, 0.3);
+    padding-top: 15px;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 400px) {
+    .invitacion-card {
+        height: 600px;
+    }
+    .titulo-principal {
+        font-size: 2.8rem;
+    }
+}
